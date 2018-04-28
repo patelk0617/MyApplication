@@ -8,6 +8,12 @@
     android:orientation="vertical"
     tools:context="edu.illinois.cs.cs125.myapplication.CalenderActivity">
 
+    <!--<ImageView-->
+        <!--android:id="@+id/myImageView"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:src="" />-->
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -16,7 +22,7 @@
         android:textAlignment="center"
         android:textColor="#000"
         android:textSize="35sp"
-        android:layout_marginLeft="130dp"
+        android:layout_marginLeft="147dp"
         android:layout_marginTop="60dp"
         />
 
@@ -28,8 +34,8 @@
         <!--app:layout_constraintVertical_bias="0.033" />-->
 
     <LinearLayout
-        android:layout_marginTop="4dp"
-        android:layout_marginLeft="44dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="50dp"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:background="@drawable/bg_calen">
