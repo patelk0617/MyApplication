@@ -1,58 +1,90 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#"
-    tools:context=".CalenderActivity">
+    android:orientation="vertical"
+    tools:context="edu.illinois.cs.cs125.myapplication.CalenderActivity">
 
     <TextView
-        android:layout_width="195dp"
-        android:layout_height="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:text="Calendar"
         android:fontFamily="cursive"
         android:textAlignment="center"
         android:textColor="#000"
-        android:textSize="35dp"
+        android:textSize="35sp"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="60dp"
+        />
 
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.033" />
+        <!--app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--app:layout_constraintHorizontal_bias="0.502"-->
+        <!--app:layout_constraintLeft_toLeftOf="parent"-->
+        <!--app:layout_constraintRight_toRightOf="parent"-->
+        <!--app:layout_constraintTop_toTopOf="parent"-->
+        <!--app:layout_constraintVertical_bias="0.033" />-->
 
-    <CalendarView
-        android:id="@+id/calendarView"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="44dp"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:background="#C71585"
-        tools:layout_editor_absoluteX="18dp"
-        tools:layout_editor_absoluteY="69dp" />
+        android:background="@drawable/bg_calen">
+        <!--tools:layout_editor_absoluteX="42dp"-->
+        <!--tools:layout_editor_absoluteY="68dp">-->
+
+        <CalendarView
+            android:id="@+id/calendarView"
+            android:layout_width="wrap_content"
+            android:layout_height="320dp"
+            android:background="@color/colorPrimary"
+            tools:layout_editor_absoluteX="18dp"
+            tools:layout_editor_absoluteY="69dp">
+
+        </CalendarView>
+
+    </LinearLayout>
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/reminder"
+        android:background="@drawable/bg_btn"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="26dp"
+        android:paddingRight="20dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Reminder"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="447dp" />
+        android:text="Reminder" />
+        <!--tools:layout_editor_absoluteX="16dp"-->
+        <!--tools:layout_editor_absoluteY="447dp" />-->
 
     <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="46dp"
-        android:text="To Do"
-        tools:layout_editor_absoluteX="280dp"
-        tools:layout_editor_absoluteY="449dp" />
-
-    <Button
-        android:id="@+id/button3"
+        android:id="@+id/toDo"
+        android:background="@drawable/bg_btn"
+        android:layout_marginLeft="250dp"
+        android:layout_marginTop="-49dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Kooky Mode"
-        tools:layout_editor_absoluteX="137dp"
-        tools:layout_editor_absoluteY="424dp" />
+        android:text="To-Do" />
+        <!--tools:layout_editor_absoluteX="280dp"-->
+        <!--tools:layout_editor_absoluteY="449dp" />-->
 
-</android.support.constraint.ConstraintLayout>
+    <Button
+        android:id="@+id/kookyMode"
+        android:background="@drawable/bg_btn"
+        android:layout_marginLeft="131dp"
+        android:layout_marginTop="15dp"
+        android:paddingLeft="26dp"
+        android:paddingRight="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kooky Mode" />
+        <!--tools:layout_editor_absoluteX="137dp"-->
+        <!--tools:layout_editor_absoluteY="424dp" />-->
+
+</LinearLayout>
