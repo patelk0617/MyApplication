@@ -16,7 +16,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ReminderActivity"></activity>
+        <activity android:name=".ReminderActivity" />
+        <activity android:name=".TodoActivity" />
+        <activity android:name=".KookyActivity"></activity>
     </application>
 
 </manifest>

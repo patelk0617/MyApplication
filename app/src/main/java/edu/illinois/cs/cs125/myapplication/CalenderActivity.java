@@ -32,9 +32,36 @@ public class CalenderActivity extends AppCompatActivity {
             }
         });
 
+        toDo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openTodo();
+            }
+        });
+
+        kookyMode.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openKookyMode();
+            }
+        });
+
+
+
+
     }
     public void openReminder() {
         Intent intent = new Intent(this, ReminderActivity.class);
+        startActivity(intent);
+    }
+
+    public void openTodo() {
+        Intent intent = new Intent(this, TodoActivity.class);
+        startActivity(intent);
+    }
+
+    public void openKookyMode() {
+        Intent intent = new Intent(this, KookyActivity.class);
         startActivity(intent);
     }
 
