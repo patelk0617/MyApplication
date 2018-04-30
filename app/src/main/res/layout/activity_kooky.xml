@@ -1,9 +1,104 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".KookyActivity">
+<LinearLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+tools:context=".KookyActivity"
+    android:background="@drawable/kale">
 
-</android.support.constraint.ConstraintLayout>
+
+<!--<ImageView-->
+<!--android:id="@+id/myImageView"-->
+<!--android:layout_width="wrap_content"-->
+<!--android:layout_height="wrap_content"-->
+<!--android:src="" />-->
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Kalendar"
+    android:fontFamily= "cursive"
+    android:textAlignment="center"
+    android:textColor="#000"
+    android:background="#1D8348"
+    android:textSize="35sp"
+    android:layout_marginLeft="147dp"
+    android:layout_marginTop="60dp"
+    />
+
+<!--app:layout_constraintBottom_toBottomOf="parent"-->
+<!--app:layout_constraintHorizontal_bias="0.502"-->
+<!--app:layout_constraintLeft_toLeftOf="parent"-->
+<!--app:layout_constraintRight_toRightOf="parent"-->
+<!--app:layout_constraintTop_toTopOf="parent"-->
+<!--app:layout_constraintVertical_bias="0.033" />-->
+
+<LinearLayout
+    android:layout_marginTop="20dp"
+    android:layout_marginLeft="50dp"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_calen">
+    <!--tools:layout_editor_absoluteX="42dp"-->
+    <!--tools:layout_editor_absoluteY="68dp">-->
+
+    <CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="wrap_content"
+        android:layout_height="330dp"
+        android:paddingBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="#1D8348"
+        tools:layout_editor_absoluteX="18dp"
+        tools:layout_editor_absoluteY="69dp">
+
+    </CalendarView>
+
+</LinearLayout>
+
+<Button
+    android:id="@+id/reminder"
+    android:background="@drawable/bg_kooky"
+    android:textColor="#1D8348"
+    android:layout_marginLeft="40dp"
+    android:layout_marginTop="20dp"
+    android:paddingLeft="26dp"
+    android:paddingRight="20dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Reminder" />
+<!--tools:layout_editor_absoluteX="16dp"-->
+<!--tools:layout_editor_absoluteY="447dp" />-->
+
+<Button
+    android:id="@+id/toDo"
+    android:background="@drawable/bg_kooky"
+    android:textColor="#1D8348"
+    android:layout_marginLeft="250dp"
+    android:layout_marginTop="-49dp"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="To-Do" />
+<!--tools:layout_editor_absoluteX="280dp"-->
+<!--tools:layout_editor_absoluteY="449dp" />-->
+
+<Button
+    android:id="@+id/normalMode"
+    android:background="@drawable/bg_kooky"
+    android:textColor="#1D8348"
+    android:layout_marginLeft="131dp"
+    android:layout_marginTop="15dp"
+    android:paddingLeft="26dp"
+    android:paddingRight="20dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Normal Mode" />
+<!--tools:layout_editor_absoluteX="137dp"-->
+<!--tools:layout_editor_absoluteY="424dp" />-->
+
+</LinearLayout>
